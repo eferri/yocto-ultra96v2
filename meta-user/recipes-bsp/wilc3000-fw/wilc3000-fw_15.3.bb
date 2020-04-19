@@ -9,7 +9,6 @@ SRCREV = "990275ca7f6e3debc58aaac77918176e55f23a96"
 
 S = "${WORKDIR}/git"
 
-DEPENDS += "wilc3000-driver"
 
 do_install() {
     install -d ${D}${base_libdir}/firmware/mchp
