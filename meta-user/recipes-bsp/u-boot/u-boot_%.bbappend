@@ -4,6 +4,8 @@ SRC_URI =+ "file://pm_cfg_obj.c"
 
 do_compile[mcdepends] = "multiconfig::pmu:pmu-firmware:do_deploy"
 
+CFLAGS += "-DDEBUG -DCONFIG_LOGLEVEL=8"
+
 CFG_OBJ_BIN="pm_cfg_obj.bin"
 CFG_OBJ_PATH="${CFG_OBJ_BIN}"
 
