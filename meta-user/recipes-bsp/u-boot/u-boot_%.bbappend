@@ -1,1 +1,1 @@
-do_compile[mcdepends] = "multiconfig::pmu:pmu-firmware:do_deploy"
+do_compile[mcdepends] = "multiconfig:ultra96v2:pmu:pmu-firmware:do_deploy"

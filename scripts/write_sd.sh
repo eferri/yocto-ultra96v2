@@ -31,7 +31,6 @@ sudo cp "$IMG_PATH"/atf-uboot.ub "$BOOTFS/"
 sudo cp "$IMG_PATH"/Image "$BOOTFS/"
 sudo cp "$IMG_PATH"/zynqmp-zcu100-revC.dtb "$BOOTFS/"
 sudo cp "$IMG_PATH"/uEnv.txt "$BOOTFS/"
-sudo cp "$IMG_PATH"/boot.scr "$BOOTFS/"
 
 echo "Writing Root FS..."
 sudo tar x -C "$ROOTFS" -f "$IMG_PATH/core-image-minimal-ultra96v2.tar.gz"
