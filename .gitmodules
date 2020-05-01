@@ -1,9 +1,18 @@
 [submodule "poky"]
 	path = poky
-	url = git://git.yoctoproject.org/poky
+	url = git@github.com:Xilinx/poky.git
 [submodule "meta-xilinx"]
 	path = meta-xilinx
 	url = git@github.com:Xilinx/meta-xilinx.git
 [submodule "meta-openembedded"]
 	path = meta-openembedded
-	url = git@github.com:openembedded/meta-openembedded.git
+	url = git@github.com:Xilinx/meta-openembedded.git
+[submodule "meta-xilinx-tools"]
+	path = meta-xilinx-tools
+	url = git@github.com:Xilinx/meta-xilinx-tools.git
+[submodule "meta-petalinux"]
+	path = meta-petalinux
+	url = git@github.com:eferri/meta-petalinux.git
+[submodule "meta-openamp"]
+	path = meta-openamp
+	url = git@github.com:Xilinx/meta-openamp.git
