@@ -1,18 +1,22 @@
 
+build:
+	source poky/oe-init-build-env && \
+	bitbake fpga-image-full
+
 build-minimal:
-	source poky/oe-init-build-env ./build && \
+	source poky/oe-init-build-env && \
 	bitbake petalinux-image-minimal
 
 clean-minimal:
-	source poky/oe-init-build-env ./build && \
+	source poky/oe-init-build-env && \
 	bitbake -c cleansstate petalinux-image-minimal
 
 deps:
-	source poky/oe-init-build-env ./build && \
+	source poky/oe-init-build-env && \
 	bitbake -g petalinux-image-minimal
 
 menuconfig:
-	source poky/oe-init-build-env ./build && \
+	source poky/oe-init-build-env && \
 	bitbake linux-yocto -c kernel_configme -f && \
 	bitbake linux-yocto -c menuconfig
 
@@ -39,5 +43,5 @@ clean-all:
 	rm -rf ./build/*.log ./build/tmp ./build/sstate-cache \
 		   ./build/cache ./build/buildhistory
 
-.PHONY: build-minimal clean-minimal clean-all
+.PHONY: build build-minimal clean-minimal clean-all
 .PHONY: build-sd mount-sd bootfs-sd rootfs-sd eject-sd erase-sd

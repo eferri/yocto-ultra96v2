@@ -6,7 +6,7 @@ echo "Erasing root partition ..."
 sudo rm -rf "$ROOTFS"/*
 
 echo "Writing Root FS..."
-sudo tar -xvf "$IMG_PATH"/petalinux-image-minimal-ultra96v2.tar.gz -C "$ROOTFS"
+sudo tar -xvf "$IMG_PATH"/fpga-image-full-ultra96v2.tar.gz -C "$ROOTFS"
 
 echo "Syncing changes..."
 sync
