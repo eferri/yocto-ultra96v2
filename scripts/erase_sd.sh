@@ -2,11 +2,11 @@
 set -eu
 source ./scripts/common.sh
 
-echo "Erasing bootfs ..."
-sudo rm -f "$BOOTFS/*" "$BOOTFS/.*"
+echo "Erasing boot partition ..."
+sudo rm -rf "$BOOTFS"/*
 
-echo "Erasing rootfs ..."
-sudo rm -f "$ROOTFS/*" "$ROOTFS/.*"
+echo "Erasing root partition ..."
+sudo rm -rf "$ROOTFS"/*
 
 echo "Syncing ..."
 sync

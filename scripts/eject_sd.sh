@@ -6,11 +6,11 @@ echo "Syncing..."
 sync
 
 echo "Unmounting..."
-sudo umount "$ROOTFS"
-sudo umount "$BOOTFS"
+sudo umount "$ROOTFS" || true
+sudo umount "$BOOTFS" || true
 
 echo "Ejecting..."
-sudo udisksctl power-off -b /dev/sda
+sudo udisksctl power-off -b /dev/sda || true
 
 echo "Done!"
 exit

@@ -3,6 +3,6 @@ set -eu
 
 DIR="$(git rev-parse --show-toplevel)"
 SDDEV="/dev/sda"
-BOOTFS="$DIR/images/mount/boot"
-ROOTFS="$DIR/images/mount/rootfs"
-IMG_PATH="$DIR/build/tmp/deploy/linux"
+BOOTFS="$DIR/mount/boot"
+ROOTFS="$DIR/mount/rootfs"
+IMG_PATH="$DIR/build/tmp/deploy/images/ultra96v2"
