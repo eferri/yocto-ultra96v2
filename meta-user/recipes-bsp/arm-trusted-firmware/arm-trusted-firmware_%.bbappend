@@ -1,2 +1,3 @@
-# Use UART1 for console etc
-ATF_CONSOLE = "cadence1"
+atf_bl33_load = "0x8000000"
+EXTRA_OEMAKE_append = " PRELOADED_BL33_BASE=${atf_bl33_load}"
+ATF_CONSOLE_zynqmp = "cadence1"

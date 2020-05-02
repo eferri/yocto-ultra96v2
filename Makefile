@@ -35,4 +35,9 @@ eject-sd:
 erase-sd:
 	./scripts/erase_sd.sh
 
-.PHONY: build-minimal clean-minimal build-sd mount-sd bootfs-sd rootfs-sd eject-sd erase-sd
+clean-all:
+	rm -rf ./build/*.log ./build/tmp ./build/sstate-cache \
+		   ./build/cache ./build/buildhistory
+
+.PHONY: build-minimal clean-minimal clean-all
+.PHONY: build-sd mount-sd bootfs-sd rootfs-sd eject-sd erase-sd
