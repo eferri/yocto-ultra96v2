@@ -7,6 +7,8 @@ IMAGE_FEATURES += "\
 "
 
 COMMON_INSTALL += "\
+    iw \
+    wpa-supplicant \
     wilc \
     wilc3000-fw \
 "
