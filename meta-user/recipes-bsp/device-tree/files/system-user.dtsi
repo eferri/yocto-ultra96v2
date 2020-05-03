@@ -1,5 +1,4 @@
 /include/ "system-conf.dtsi"
-/include/ "openamp.dtsi"
 / {
    sdio_pwrseq: sdio_pwrseq {  /* This needs to be able to manipulate the chip_en and the resetn properly */
       compatible = "mmc-pwrseq-simple";
