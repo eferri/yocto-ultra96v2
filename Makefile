@@ -7,10 +7,6 @@ build-minimal:
 	source poky/oe-init-build-env && \
 	bitbake petalinux-image-minimal
 
-clean-minimal:
-	source poky/oe-init-build-env && \
-	bitbake -c cleansstate petalinux-image-minimal
-
 deps:
 	source poky/oe-init-build-env && \
 	bitbake -g petalinux-image-minimal

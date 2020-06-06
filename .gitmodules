@@ -16,3 +16,9 @@
 [submodule "meta-openamp"]
 	path = meta-openamp
 	url = git@github.com:Xilinx/meta-openamp.git
+[submodule "meta-vitis-ai"]
+	path = meta-vitis-ai
+	url = git@github.com:Xilinx/meta-vitis-ai.git
+[submodule "meta-clang"]
+	path = meta-clang
+	url = git@github.com:Xilinx/meta-clang.git
