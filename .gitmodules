@@ -22,3 +22,6 @@
 [submodule "meta-clang"]
 	path = meta-clang
 	url = git@github.com:Xilinx/meta-clang.git
+[submodule "vitis-hls-sort"]
+	path = vitis-hls-sort
+	url = git@github.com:eferri/vitis-hls-sort.git
