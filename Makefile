@@ -1,15 +1,11 @@
 
 build:
 	source poky/oe-init-build-env && \
-	bitbake fpga-image-full
-
-build-minimal:
-	source poky/oe-init-build-env && \
-	bitbake petalinux-image-minimal
+	nice bitbake fpga-image-full
 
 deps:
 	source poky/oe-init-build-env && \
-	bitbake -g petalinux-image-minimal
+	bitbake -g fpga-image-full
 
 menuconfig:
 	source poky/oe-init-build-env && \

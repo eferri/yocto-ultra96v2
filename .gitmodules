@@ -14,14 +14,17 @@
 	path = meta-petalinux
 	url = git@github.com:eferri/meta-petalinux.git
 [submodule "meta-openamp"]
-	path = meta-openamp
+	path = meta-thirdparty/meta-openamp
 	url = git@github.com:Xilinx/meta-openamp.git
 [submodule "meta-vitis-ai"]
 	path = meta-vitis-ai
 	url = git@github.com:Xilinx/meta-vitis-ai.git
 [submodule "meta-clang"]
-	path = meta-clang
+	path = meta-thirdparty/meta-clang
 	url = git@github.com:Xilinx/meta-clang.git
 [submodule "vitis-hls-sort"]
 	path = vitis-hls-sort
 	url = git@github.com:eferri/vitis-hls-sort.git
+[submodule "meta-thirdparty/meta-rust"]
+	path = meta-thirdparty/meta-rust
+	url = git@github.com:meta-rust/meta-rust.git
