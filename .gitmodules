@@ -28,3 +28,9 @@
 [submodule "meta-thirdparty/meta-rust"]
 	path = meta-thirdparty/meta-rust
 	url = git@github.com:meta-rust/meta-rust.git
+[submodule "meta-avnet"]
+	path = meta-avnet
+	url = git@github.com:Avnet/meta-avnet.git
+[submodule "meta-browser"]
+	path = meta-browser
+	url = git@github.com:Xilinx/meta-browser.git

@@ -1,7 +1,14 @@
+DOCKER_RUN= docker run --rm -it -v $$(pwd):/yocto-ultra96v2 yocto-ultra96v2
 
-build:
-	source poky/oe-init-build-env && \
-	nice bitbake fpga-image-full
+docker-image:
+	docker build --tag yocto-ultra96v2 docker
+
+docker-shell: docker-image
+	$(DOCKER_RUN) bash
+
+build: docker-image
+	$(DOCKER_RUN) bash -c 'source poky/oe-init-build-env && \
+				  nice bitbake fpga-image-full'
 
 deps:
 	source poky/oe-init-build-env && \
